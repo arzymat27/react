@@ -1,23 +1,25 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import s from '../header/Header.module.css'
+import ModalW from '../UI/ModalW/ModalW.js'
 
-import React from 'react';
-import '../header/Header.css'
 const Header = () => {
   return (
-      <div>
-           <header className="menu">
-        <ul className="menus">
-          <div><h1>Alma</h1></div>
-          <div className="menus-2">
-          <li> <a href="">Get Started </a></li>
-          <li> <a href="">How It Works </a></li>
-          <li> <a href="">For Providers </a></li>
-          <li> <a href="">About Alma </a></li>
-          <button className="btn1">Login</button>
-          <button className="btn2">Find a provider</button>
-          </div>
-      
-        </ul>
-        <div className="big">
+    <section>
+      <header className={s.menu}>
+        <div className={s.menus}>
+          <div><NavLink to='/'>Alma</NavLink></div>
+          <ul className={s.menus2}>
+            <li> <NavLink to="/getstarted">Get Started </NavLink></li>
+            <li> <NavLink to="/howitworks">How It Works </NavLink></li>
+            <li> <NavLink to="">For Providers </NavLink></li>
+            <li> <NavLink to="">About Alma </NavLink></li>
+            <button className={s.btn1}>Login</button>
+            <button className={s.btn2}>Find a provider</button>
+          </ul>
+        </div>
+
+        <div className={s.big}>
           <h1 >
             Alma makes it easy to find high <br></br>
             quality, affordable mental <br></br>
@@ -26,16 +28,20 @@ const Header = () => {
           <button>Browse our directory</button>
 
         </div>
+        <div className='modW'>
+          <ModalW />
+        </div>
+
 
       </header>
-      </div>
-  );
+
+    </section>
+  )
 }
 
-export default Header;
-
-     
+export default Header
 
 
 
-    
+
+

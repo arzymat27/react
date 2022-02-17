@@ -8,13 +8,12 @@
 }
 
 .btn1{
-background: transparent;
+background: turquoise;
 color: white;
 padding: 10px;
 border: none;
 border-radius: 3px;
 font-size: 16px;
-
 }
 .btn2{
 color: white;
@@ -38,7 +37,7 @@ color: white;
     color: white;
     font-size: 15px;
 }
-.menus-2{
+.menus2{
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
@@ -46,9 +45,8 @@ color: white;
     align-items: center;
 }
 .big{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    padding-top: 2rem;
 }
 .big button{
     color: white;
@@ -57,5 +55,5 @@ color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
-   
+
 }

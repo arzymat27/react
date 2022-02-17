@@ -1,22 +1,21 @@
 import './App.css'
-import './components/header/Header.css'
-import Header from "./components/header/Header"
-import Icons from "./components/icons/Icons"
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from './components/header/Header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GetStarted from './pages/GetStarted'
+import HomePage from './pages/HomePage';
+import HowItWorks from './pages/HowItWorks';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Icons />
-
-    </div>
-    
- 
-
-
-
-
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/getstarted' element={<GetStarted/>}/>
+        <Route path='/howitworks' element={<HowItWorks/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
