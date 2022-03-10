@@ -1,4 +1,5 @@
 import React from 'react'
+import Nave from '../UI/Nave/Nave'
 import { NavLink } from 'react-router-dom'
 import s from '../header/Header.module.css'
 import ModalW from '../UI/ModalW/ModalW.js'
@@ -30,6 +31,9 @@ const Header = () => {
         </div>
         <div className='modW'>
           <ModalW />
+        </div>
+        <div>
+          <Nave/>
         </div>
 
 
